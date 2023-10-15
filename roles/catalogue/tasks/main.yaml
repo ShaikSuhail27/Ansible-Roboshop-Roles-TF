@@ -1,3 +1,7 @@
+- name: printing the version
+  debug:
+   msg : "version is {{app_version}}"
+
 - name: Installing the Node js by setup the node environment
   ansible.builtin.import_role:
     name: common
